@@ -45,8 +45,9 @@ To run this project, the following packages are required:
   
 For this project, you can use the dataset from Kaggle: [Binary Image Classification Dataset](https://www.kaggle.com/datasets/hasnainkhan0123/binary-image-classification)
 
-## Train the Model and Evaluation Phase:
-   - Run the main script with your datasets loaded, the script trains and evaluates and make predictions:
+## Train the Model and Evaluation Phase
+
+Run the main script with your datasets loaded, the script trains and evaluates and make predictions:
 
 The script will also output accuracy, loss, and other metrics for evaluation, thanks to the helper functions.
 
