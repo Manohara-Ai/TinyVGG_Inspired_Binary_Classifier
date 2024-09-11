@@ -54,17 +54,7 @@ pip install torch torchvision opencv-python numpy matplotlib tqdm
 
 ## Training and Evaluation
 
-1. **Training:**
-   - Run the training script with your datasets loaded:
-     ```bash
-     python train.py --data-dir ./datasets --epochs 10 --batch-size 32 --lr 0.001
-     ```
-
-2. **Evaluation:**
-   - To evaluate the model on the validation dataset:
-     ```bash
-     python evaluate.py --data-dir ./datasets/val
-     ```
+To the train, evaluate and test the model, make necessary changes and run the main script.
 
    - The script will output accuracy, loss, and other metrics for evaluation.
 
