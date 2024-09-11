@@ -6,7 +6,7 @@ This project implements a Convolutional Neural Network (CNN) binary classifier i
 - [Model Architecture](#model-architecture)
 - [Requirements](#requirements)
 - [Usage](#usage)
-- [Training and Evaluation](#train-the-model-and-evalution-phase)
+- [Training the Model and Evaluation Phase](#train-the-model-and-evalution-phase)
 - [Contributor](#contributor)
 
 ## Model Architecture
