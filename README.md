@@ -6,7 +6,7 @@ This project implements a Convolutional Neural Network (CNN) binary classifier i
 - [Model Architecture](#model-architecture)
 - [Requirements](#requirements)
 - [Usage](#usage)
-- [Training and Evaluation](#training)
+- [Training and Evaluation](#train-the-model-and-evalution-phase)
 - [Contributor](#contributor)
 
 ## Model Architecture
@@ -42,11 +42,13 @@ To run this project, the following packages are required:
 
 1. **Data Preparation:**
    - Place your training and validation images in respective folders: `datasets/train/` and `test_dataset/`, with subfolders for each class (e.g., `class0/`, `class1/`).
+  
+For this project, you can use the dataset from Kaggle: [Binary Image Classification Dataset](https://www.kaggle.com/datasets/hasnainkhan0123/binary-image-classification)
 
-2. **Train the Model and Evaluation Phase:**
+## Train the Model and Evaluation Phase:
    - Run the main script with your datasets loaded, the script trains and evaluates and make predictions:
 
-The script will also output accuracy, loss, and other metrics for evaluation.
+The script will also output accuracy, loss, and other metrics for evaluation, thanks to the helper functions.
 
 ## Contributor
 
