@@ -6,17 +6,17 @@ This project implements a Convolutional Neural Network (CNN) binary classifier i
 - [Model Architecture](#model-architecture)
 - [Requirements](#requirements)
 - [Usage](#usage)
-- [Training the Model and Evaluation Phase](#train-the-model-and-evalution-phase)
+- [Training and Evaluation](#training-and-evaluation)
 - [Contributor](#contributor)
 
 ## Model Architecture
 
-The CNN model is based on the TinyVGG architecture with modifications to suit binary classification tasks. The architecture consists of:
+The CNN model is based on the TinyVGG architecture with modifications for binary classification. The architecture consists of:
 - Multiple convolutional layers followed by max-pooling.
 - ReLU activation functions after each convolution.
 - Fully connected layers at the end to output a binary classification decision.
 
-Key Features:
+**Key Features:**
 - Lightweight model, suitable for small datasets.
 - Two output nodes using softmax activation for binary classification.
 
@@ -38,20 +38,38 @@ To run this project, the following packages are required:
 - Matplotlib (for visualizations)
 - tqdm (for progress tracking)
 
+You can install the required packages using `pip`:
+
+```bash
+pip install torch torchvision opencv-python numpy matplotlib tqdm
+```
+
 ## Usage
 
 1. **Data Preparation:**
-   - Place your training and validation images in respective folders: `datasets/train/` and `test_dataset/`, with subfolders for each class (e.g., `class0/`, `class1/`).
-  
-For this project, you can use the dataset from Kaggle: [Binary Image Classification Dataset](https://www.kaggle.com/datasets/hasnainkhan0123/binary-image-classification)
+   - Place your training and validation images in respective folders: `datasets/train/` and `datasets/val/`, with subfolders for each class (e.g., `class0/`, `class1/`).
 
-## Train the Model and Evaluation Phase
+2. **Dataset:**
+   - For this project, you can use the dataset from Kaggle: [Binary Image Classification Dataset](https://www.kaggle.com/datasets/hasnainkhan0123/binary-image-classification)
 
-Run the main script with your datasets loaded, the script trains and evaluates and make predictions:
+## Training and Evaluation
 
-The script will also output accuracy, loss, and other metrics for evaluation, thanks to the helper functions.
+1. **Training:**
+   - Run the training script with your datasets loaded:
+     ```bash
+     python train.py --data-dir ./datasets --epochs 10 --batch-size 32 --lr 0.001
+     ```
+
+2. **Evaluation:**
+   - To evaluate the model on the validation dataset:
+     ```bash
+     python evaluate.py --data-dir ./datasets/val
+     ```
+
+   - The script will output accuracy, loss, and other metrics for evaluation.
 
 ## Contributor
 
 This project is developed by B M Manohara @Manohara-Ai
+
 ---
